@@ -1,4 +1,5 @@
 import { app, BrowserWindow, Menu, shell } from 'electron';
+import temp from 'temp';
 
 let menu;
 let template;
@@ -37,6 +38,12 @@ const installExtensions = async () => {
     }
   }
 };
+
+temp.track();
+temp.mkdir('signals', (err, dirPath) => {
+  console.log('Just check the dirPath');
+  console.log(dirPath);
+})
 
 app.on('ready', async () => {
   await installExtensions();
