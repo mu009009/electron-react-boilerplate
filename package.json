@@ -151,6 +151,8 @@
   "dependencies": {
     "electron-debug": "^1.0.1",
     "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
@@ -158,6 +160,7 @@
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
+    "signals-api": "^1.0.61",
     "source-map-support": "^0.4.6",
     "temp": "git+https://github.com/slavikshen/node-temp.git"
   },
